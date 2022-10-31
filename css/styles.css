@@ -147,6 +147,15 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--title-text-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-contact .link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-list .link:hover,
@@ -255,6 +264,9 @@ body {
   display: block;
   border-radius: 4px;
   padding: 10px 32px;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-hiro:hover,
@@ -489,6 +501,9 @@ body {
   align-items: center;
   justify-content: center;
   color: #afb1b8;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon {
@@ -532,6 +547,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-icon {
@@ -591,6 +609,12 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-contact .link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer-contact .link:hover,
 .footer-contact .link:focus {
   color: var(--accent-color);
@@ -641,10 +665,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.footer-soc-icon {
-  fill: #ffffff;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
@@ -652,10 +675,14 @@ body {
   background-color: #2196f3;
 }
 
-.footer-soc-link:hover .footer-soc-icon,
-.footer-soc-link:focus .footer-soc-icon {
+.footer-soc-icon {
   fill: #ffffff;
 }
+
+/* .footer-soc-link:hover .footer-soc-icon,
+.footer-soc-link:focus .footer-soc-icon {
+  fill: #ffffff;
+} */
 
 /* ----------------Фыльтри-------------- */
 
@@ -673,13 +700,15 @@ body {
   font-size: 16px;
   line-height: 1.62;
   display: flex;
-
   letter-spacing: 0.03em;
   border: none;
   border-radius: 4px;
   color: var(--title-text-color);
   background-color: #f5f4fa;
   padding: 6px 22px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-filters:hover,
@@ -705,6 +734,9 @@ body {
 
 .portfolio-link {
   display: block;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-link:hover,
@@ -754,10 +786,7 @@ body {
 .portfolio-top-text {
   position: absolute;
   top: 0;
-  padding-top: 63px;
-  padding-bottom: 63px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 63px 24px;
   color: #ffffff;
   font-weight: 400;
   font-size: 18px;
@@ -765,7 +794,9 @@ body {
   background: rgba(33, 150, 243, 0.9);
   height: 100%;
   transform: translateY(100%);
-  transition: transform 300ms linear;
+  /* transition: transform 250ms linear; */
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
 
